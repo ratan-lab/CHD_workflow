@@ -1,11 +1,11 @@
 # A CSV file with sample and full path for the corresponding CRAM file
-crams: "samples.csv"
+crams: "config/samples.csv"
 
 # A PED file 
-ped: "samples.ped"
+ped: "config/samples.ped"
 
 # A file with HPO IDs for the proband, one on each line
-hpo: "hpo.txt"
+hpo: "config/hpo.txt"
 
 # full path for exomiser jar and application.properties
 exomiser_jar: ""
