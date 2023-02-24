@@ -1,0 +1,5 @@
+name: samtools_sortindex
+channels:
+  - bioconda
+dependencies:
+  - samtools=1.9

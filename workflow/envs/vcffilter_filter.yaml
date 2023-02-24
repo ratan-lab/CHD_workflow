@@ -1,0 +1,5 @@
+name: vcffilter_filter
+channels:
+  - conda-forge
+dependencies:
+  - gcc=11.2.0

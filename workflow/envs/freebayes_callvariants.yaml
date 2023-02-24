@@ -1,0 +1,6 @@
+name: freebayes_callvariants
+channels:
+  - conda-forge
+dependencies:
+  - gcc=11.2.0
+  - parallel=20200322

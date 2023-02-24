@@ -1,0 +1,8 @@
+name: bcftools_annt_denovo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - htslib=1.9
+  - bcftools=1.9

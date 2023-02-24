@@ -1,0 +1,5 @@
+name: exomiser_prioritize
+channels:
+  - conda-forge
+dependencies:
+  - javafx-sdk

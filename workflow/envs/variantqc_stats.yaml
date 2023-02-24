@@ -1,0 +1,5 @@
+name: variantqc_stats
+channels:
+  - conda-forge
+dependencies:
+  - openjdk

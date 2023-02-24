@@ -1,0 +1,7 @@
+name: bgzip_zip
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - gcc=9.4.0
+  - htslib=1.10.2
