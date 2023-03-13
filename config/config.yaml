@@ -1,20 +1,20 @@
 # A CSV file with sample and full path for the corresponding CRAM file
-crams: "../config/samples.csv"
+crams: ""
 
 # A PED file 
-ped: "../config/samples.ped"
+ped: ""
 
 # A file with HPO IDs for the proband, one on each line
-hpo: "../config/hpo.txt"
+hpo: ""
 
 # full path for exomiser jar and application.properties
 exomiser_jar: ""
 exomiser_app: ""
 
-# full path of the fasta reference to use
+# full path of the fasta reference you would like to align to
 reference: ""
 
-# sex chromosomes in the fasta reference
+# sex chromosomes in the fasta reference included as {reference}
 xchrom: ""
 ychrom: ""
 
@@ -25,9 +25,5 @@ target_bed: ""
 LCR_bed: ""
 
 # full path for binaries of some tools that have not been containerized yet
-samblaster: ""
-alignstats: ""
-freebayes: ""
-vt: ""
 DISCVRSeq: ""
 triodenovo: ""

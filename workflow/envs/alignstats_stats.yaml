@@ -1,6 +1,6 @@
-name: vcffilter_filter
+name: bwa_align
 channels:
   - conda-forge
   - bioconda
 dependencies:
-  - freebayes=1.3.6
+  - alignstats=0.10

@@ -9,11 +9,9 @@ if __name__ == "__main__":
     hpo_file = sys.argv[5]
 
     prioritiser = sys.argv[6]
-    prioritiser_params = sys.argv[7]
-    priority = sys.argv[8]
+    priority = sys.argv[7]
 
-    output = sys.argv[9]
-
+    output = sys.argv[8]
 
 with open(hpo_file) as f: hpo = f.read().splitlines()
 
@@ -34,7 +32,10 @@ with open(ped_file, 'r') as f:
             break
 assert proband is not None
 
-
+if prioritiser == "exomeWalkerPrioritiser":
+    prioritiser_params = "seedGeneIds: [79738, 339829, 10715, 25790, 146845, 220136, 55997, 1767, 118856, 284086, 1482, 4838, 168507, 4087, 374618, 55329, 7547]",
+else:
+    prioritiser_params = ''
 
 initial_string = f"analysis:\n    genomeAssembly: {ref}\n    vcf: {vcf_file}\n    ped: {ped_file}\n    proband: {proband}\n    hpoIds: {hpo}\n"
 
@@ -47,5 +48,5 @@ constant_string3 = ", minPriorityScore: 0.501}\n        ]\noutputOptions:\n    o
 priority_string3 = f" exomiser/{prioritiser}"
 constant_string4 = "\n    outputFormats: [HTML, JSON, TSV_GENE, TSV_VARIANT, VCF]"
 
-with open(output[0], 'w') as f:
+with open(output, 'w') as f:
     print(initial_string + constant_string1 + priority_string1.replace('\'', '') + constant_string2 + priority_string2 + constant_string3 + priority_string3 + constant_string4, file=f)

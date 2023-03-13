@@ -2,4 +2,4 @@ name: variantqc_stats
 channels:
   - conda-forge
 dependencies:
-  - openjdk
+  - openjdk=8
